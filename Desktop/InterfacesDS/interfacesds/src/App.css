@@ -6,3 +6,12 @@
   background-color: black;
   color: white;
 }
+
+.navlist {
+  @apply hover:border-b-3 cursor-pointer hover:pb-1
+}
+
+@theme {
+  --color-brand: #a1a1a1; /* custom gray */
+
+}
