@@ -1,5 +1,6 @@
 import { SiCssdesignawards } from "react-icons/si";
 import { NavLink } from "react-router-dom";
+import GetandPreview from "./GetandPreview";
 
 function Navbar() {
     return ( 
@@ -29,10 +30,7 @@ function Navbar() {
                     >Articles</NavLink>
                     <NavLink>Contact</NavLink>
                 </div>
-                <div className="space-x-4 ">
-                    <NavLink className="border border-accent px-6 py-3 rounded-md hover:text-black hover:bg-gray-100">Preview</NavLink>
-                    <NavLink className="text-black bg-white rounded-md py-3 px-4 hover:bg-blue-50">Get it now</NavLink>
-                </div>
+                <GetandPreview></GetandPreview>
             </div>
         </nav>
      );
