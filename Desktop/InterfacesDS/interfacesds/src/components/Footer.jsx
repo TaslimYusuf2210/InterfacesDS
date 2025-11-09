@@ -2,7 +2,7 @@ import { SiCssdesignawards } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="px-4 py-6 border border-t border-gray-800">
+    <div className="px-4 py-6 border-t border-t-accent">
         <div className="flex">
       <div className="w-full space-y-10 pr-32">
           <div className="flex items-center gap-2">
@@ -12,11 +12,11 @@ function Footer() {
             <span className="font-bold text-2xl">Interfaces DS</span>
           </div>
           <p className="text-brand">Subscribe to our newsletter for the latest updates on features and releases.</p>
-          <hr className="text-gray-800 h-px w-full"/>
+          <hr className="text-accent h-px w-full"/>
           <form className="w-full text-brand space-y-2">
             <div className="flex gap-4 w-full">
-                <input className="bg-inherit px-2 border w-full py-3 rounded-md border-gray-800" placeholder="Your Email Address" type="text"/>
-                <button className="text-black hover:cursor-pointer bg-white rounded-md py-3 px-4 font-medium hover:bg-blue-50">Suscribe</button>
+                <input className="bg-inherit px-2 border w-full py-3 rounded-md border-accent" placeholder="Your Email Address" type="text"/>
+                <button className="text-black hover:cursor-pointer bg-white rounded-md py-3 px-4 font-medium hover:bg-blue-50">Subscribe</button>
             </div>
             <p>By subscribing, you consent to our Privacy Policy and agree to receive updates.</p>
           </form>
@@ -38,7 +38,7 @@ function Footer() {
       </div>
         </div>
         <div className="pt-10 space-y-4">
-        <hr className="text-gray-800"/>
+        <hr className="text-accent"/>
         <p>© 2025 Interfaces Design System. All rights reserved.</p>
         </div>
     </div>
