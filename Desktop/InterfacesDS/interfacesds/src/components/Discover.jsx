@@ -1,5 +1,6 @@
 import Interface from "./Interfaces";
 import GetandPreview from "./GetandPreview";
+import Carousel from "./carousel";
 
 function Discover() {
     return ( 
@@ -34,7 +35,9 @@ function Discover() {
                 </div>
             <GetandPreview></GetandPreview>
             </div>
-            <div className="w-full"></div>
+            <div className="w-full">
+                <Carousel/>
+            </div>
         </div>
      );
 }
