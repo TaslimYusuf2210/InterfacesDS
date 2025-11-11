@@ -4,8 +4,8 @@ import Carousel from "./carousel";
 
 function Discover() {
     return ( 
-        <div className="flex">
-            <div className="p-16 text-left space-y-8 w-full">
+        <div className="flex px-16 my-24">
+            <div className=" text-left space-y-8 w-full">
                 <Interface/>
                 <h1 className="text-5xl leading-16 font-bold">
                     Discover the power <br />
@@ -35,7 +35,7 @@ function Discover() {
                 </div>
             <GetandPreview></GetandPreview>
             </div>
-            <div className="w-full">
+            <div className="w-full py-28">
                 <Carousel/>
             </div>
         </div>

@@ -31,7 +31,7 @@ function Carousel() {
             spaceBetween={30}
             slidesPerView={1}
             autoplay={{
-            delay: 4000, // change slide every 4 seconds
+            delay: 2000, // change slide every 4 seconds
             disableOnInteraction: false, // keeps autoplay running after manual swipe
             }}
             loop={true}
