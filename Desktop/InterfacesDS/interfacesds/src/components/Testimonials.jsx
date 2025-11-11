@@ -1,0 +1,83 @@
+import Interface from "./Interfaces";
+import { FaStar } from "react-icons/fa6";
+import test1 from "../assets/testimonial1.png"
+
+function Testimonials() {
+    return ( 
+        <div className="px-16">
+            <div className="text-left max-w-[65%] space-y-8">
+                <Interface></Interface>
+                <h1 className="text-5xl font-bold">
+                    Testimonials
+                </h1>
+                <p className="mb-16 font-medium text-brand text-lg">
+                    Discover what designers and developers around the world are saying about the Interfaces
+                    Design System. Their experiences showcase how our system has revolutionized workflows and
+                    enhanced project outcomes across various industries.
+                </p>
+            </div>
+            <div className="grid grid-cols-2 gap-12">
+                <div className="border-accent rounded-xl px-6 border">
+                    <div className="flex gap-2 py-6">
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                    </div>
+                    <div className="border-y py-6 border-accent">
+                        <div className="flex gap-4">
+                            <img className="size-12 rounded-full border border-accent" src={test1} alt="" />
+                            <div className="flex flex-col">
+                                <header className="font-medium">Dudu</header>
+                                <p className="text-brand">Founder, Toolfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text-brand py-6">
+                        "Im proud to say that i was the first person to get Interfaces design <br />
+                        system and have 0 regrets. <br /> <br />
+                        Its simple, functional, elegant and most importantly versatile. <br />
+                        <br />
+                        I'm currently using some of the components as the basis of <br />
+                        redesigning my startup, <span className="text-white">@Toolfolio</span> — It goes without saying that I <br />
+                        recommend this Design System."
+                    </div>
+                    
+                </div>
+                <div className="border-accent rounded-xl px-6 border">
+                    <div className="flex gap-2 py-6">
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                        <FaStar  className="text-2xl text-white"/>
+                    </div>
+                    <div className="border-y py-6 border-accent">
+                        <div className="flex gap-4">
+                            {/* <img className="size-12 rounded-full border border-accent" src={test1} alt="" /> */}
+                            <div className="size-12 rounded-full border border-accent bg-accent"></div>
+                            <div className="flex flex-col">
+                                <header className="font-medium">Your Name</header>
+                                <p className="text-brand">Your Position</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text-brand py-6">
+                        "Would you like to share your experience with Interfaces Design <br />
+                        System? We'd love to hear how our design system has helped your <br />
+                        workflow and projects. <br /> <br />
+
+                        Please send your testimonial to <span className="text-white">testimonial@interfaces.supply</span> <br /> <br />
+
+                        Your feedback helps us improve and inspires others in the design community." <br />
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+     );
+}
+
+export default Testimonials;

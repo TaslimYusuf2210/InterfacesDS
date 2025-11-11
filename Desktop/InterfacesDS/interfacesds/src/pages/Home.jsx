@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Discover from "../components/Discover";
 import Revolutionalize from "../components/Revolutionalize";
+import Testimonials from "../components/Testimonials";
 
 function Home() {
     return ( 
@@ -8,6 +9,7 @@ function Home() {
             <Hero></Hero>
             <Discover></Discover>
             <Revolutionalize></Revolutionalize>
+            <Testimonials></Testimonials>
         </div>
      );
 }
