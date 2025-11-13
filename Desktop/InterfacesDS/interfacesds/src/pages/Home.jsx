@@ -3,6 +3,7 @@ import Discover from "../components/Discover";
 import Revolutionalize from "../components/Revolutionalize";
 import Testimonials from "../components/Testimonials";
 import PricingPlans from "../components/PricingPlans";
+import Connect from "../components/Connect";
 
 function Home() {
     return ( 
@@ -12,6 +13,7 @@ function Home() {
             <Revolutionalize></Revolutionalize>
             <Testimonials></Testimonials>
             <PricingPlans></PricingPlans>
+            <Connect></Connect>
         </div>
      );
 }
