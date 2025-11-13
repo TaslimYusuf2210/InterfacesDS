@@ -4,7 +4,7 @@ import Carousel from "./carousel";
 
 function Discover() {
     return ( 
-        <div className="flex px-16 my-24">
+        <div className="flex">
             <div className=" text-left space-y-8 w-full">
                 <Interface/>
                 <h1 className="text-5xl leading-16 font-bold">

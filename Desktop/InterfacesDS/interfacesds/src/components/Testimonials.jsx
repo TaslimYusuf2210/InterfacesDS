@@ -4,7 +4,7 @@ import test1 from "../assets/testimonial1.png"
 
 function Testimonials() {
     return ( 
-        <div className="px-16">
+        <div className="">
             <div className="text-left max-w-[65%] space-y-8">
                 <Interface></Interface>
                 <h1 className="text-5xl font-bold">

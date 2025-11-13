@@ -3,7 +3,7 @@ import Interface from "./Interfaces";
 
 function Hero() {
     return ( 
-        <div className="py-20 grid place-items-center px-12">
+        <div className="grid place-items-center">
             <div className="w-full flex flex-col items-center space-y-7 h-[80vh]">
                 <Interface></Interface>
                 <div className="w-[750px] text-center">

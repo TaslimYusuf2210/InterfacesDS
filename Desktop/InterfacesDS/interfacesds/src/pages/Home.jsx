@@ -4,16 +4,18 @@ import Revolutionalize from "../components/Revolutionalize";
 import Testimonials from "../components/Testimonials";
 import PricingPlans from "../components/PricingPlans";
 import Connect from "../components/Connect";
+import Elevate from "../components/Elevate";
 
 function Home() {
     return ( 
-        <div className="px-16">
+        <div className="px-20 py-20 space-y-70">
             <Hero></Hero>
             <Discover></Discover>
             <Revolutionalize></Revolutionalize>
             <Testimonials></Testimonials>
             <PricingPlans></PricingPlans>
             <Connect></Connect>
+            <Elevate></Elevate>
         </div>
      );
 }

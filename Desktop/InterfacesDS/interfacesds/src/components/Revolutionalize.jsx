@@ -5,7 +5,7 @@ import GetandPreview from "./GetandPreview";
 
 function Revolutionalize() {
   return (
-    <div className="place-items-center text-center space-y-8 px-16">
+    <div className="place-items-center text-center space-y-8">
       <Interface></Interface>
       <h1 className="text-5xl leading-16 font-bold">
         Revolutionize Your Design <br />
