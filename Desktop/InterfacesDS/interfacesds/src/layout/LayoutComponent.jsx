@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 export default function MainLayout() {
 
     return (
-        <div className="">
+        <div className="font-lexend">
             <Navbar className=""></Navbar>
             <main className="pt-28">
                 <Outlet></Outlet>

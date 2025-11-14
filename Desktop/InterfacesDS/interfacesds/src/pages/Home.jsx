@@ -8,7 +8,7 @@ import Elevate from "../components/Elevate";
 
 function Home() {
     return ( 
-        <div className="px-20 py-20 space-y-70">
+        <div className="px-20 pt-16 pb-96 space-y-70">
             <Hero></Hero>
             <Discover></Discover>
             <Revolutionalize></Revolutionalize>

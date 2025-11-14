@@ -12,4 +12,6 @@
 @theme {
   --color-brand: #a1a1a1; /* custom gray */
   --color-accent: #262626;
+  --font-lexend: "Lexend", sans-serif;
+  --font-geistmono: "Geist Mono", monospace;
 }

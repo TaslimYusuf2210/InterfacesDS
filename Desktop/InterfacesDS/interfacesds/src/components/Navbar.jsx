@@ -4,12 +4,12 @@ import GetandPreview from "./GetandPreview";
 
 function Navbar() {
     return ( 
-        <nav className="bg-black flex justify-between px-4 pt-6 pb-6 border-b-accent border-b fixed w-full z-9999">
+        <nav className="bg-black flex justify-between px-4 pt-3 pb-3 border-b-accent border-b fixed w-full z-9999">
             <div className="flex items-center gap-2">
                 <span className="text-4xl">
                     <SiCssdesignawards />
                 </span>
-                <span className="font-bold text-2xl">
+                <span className="font-bold text-xl">
                     Interfaces DS
                 </span>
             </div>

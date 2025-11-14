@@ -6,10 +6,10 @@ function PricingPlans() {
         <div className="grid text-center">
             <div className="space-y-8 text-center grid place-items-center">
                 <Interface></Interface>
-                <h1 className="text-5xl font-bold">
+                <h1 className="text-4xl font-bold">
                         Pricing Plans
                     </h1>
-                    <p className="mb-16 font-medium text-brand text-lg">
+                    <p className="mb-16 font-medium text-brand">
                         Our design system streamlines your workflow, ensuring consistency and efficiency across all <br />
                         projects. With a minimalist approach, you can focus on creativity without the clutter.
                     </p>
@@ -24,7 +24,7 @@ function PricingPlans() {
                         <p className="text-4xl font-bold">$299</p>
                         <button type="button" className="text-left w-full text-black bg-white py-4 px-6 rounded-md cursor-pointer">Get it now</button>
                     </div>
-                    <ul className="space-y-5">
+                    <ul className="space-y-5 text-sm">
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Figma Variables</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Light/Dark Mode</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Component Properties</li>
@@ -47,7 +47,7 @@ function PricingPlans() {
                         <p className="text-4xl font-bold">$129</p>
                         <button type="button" className="text-left w-full text-black bg-white py-4 px-6 rounded-md cursor-pointer">Get it now</button>
                     </div>
-                    <ul className="space-y-5">
+                    <ul className="space-y-5 text-sm">
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Figma Variables</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Light/Dark Mode</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Component Properties</li>
@@ -67,7 +67,7 @@ function PricingPlans() {
                         <p className="text-4xl font-bold">$599</p>
                         <button type="button" className="text-left w-full text-black bg-white py-4 px-6 rounded-md cursor-pointer">Get it now</button>
                     </div>
-                    <ul className="space-y-5">
+                    <ul className="space-y-5 text-sm">
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Figma Variables</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Light/Dark Mode</li>
                         <li className="flex items-center font-medium gap-2 text-brand"><IoMdCheckmark /> Component Properties</li>

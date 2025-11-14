@@ -7,11 +7,11 @@ function Discover() {
         <div className="flex">
             <div className=" text-left space-y-8 w-full">
                 <Interface/>
-                <h1 className="text-5xl leading-16 font-bold">
+                <h1 className="text-4xl leading-16 font-bold">
                     Discover the power <br />
                     of Minimalist Design
                 </h1>
-                <p className="mb-16 font-medium text-brand text-lg">
+                <p className="mb-16 font-medium text-brand">
                     The Interfaces Design System streamlines your design process with a
                     <br /> focus on simplicity and efficiency. Elevate your projects with our
                     <br /> intuitive components and cohesive style.
@@ -19,7 +19,7 @@ function Discover() {
                 <div className="space-y-6 mb-16">
                     <div className="space-y-3 p-6 border border-accent rounded-xl w-[470px] pr-8">
                         <h5 className="font-semibold text-2xl">Minimal Modular Design</h5>
-                        <p className="text-brand font-medium text-lg">
+                        <p className="text-brand font-medium">
                             Emphasizes “less is more” with a clean grid system <br />
                             and flexible style combinations, enabling rapid <br />
                             creation of elegant interfaces.
@@ -27,7 +27,7 @@ function Discover() {
                     </div>
                     <div className="space-y-3 p-6 border border-accent rounded-xl w-[470px] pr-8">
                         <h5 className="font-semibold text-2xl">DataVis-Centric Design</h5>
-                        <p className="text-brand font-medium text-lg">
+                        <p className="text-brand font-medium ">
                             Lightweight, customizable data viz components <br />
                             (charts, dashboards, cards) for clear data display.
                         </p>

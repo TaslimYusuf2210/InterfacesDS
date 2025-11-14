@@ -6,7 +6,7 @@ function Hero() {
         <div className="grid place-items-center">
             <div className="w-full flex flex-col items-center space-y-7 h-[80vh]">
                 <Interface></Interface>
-                <div className="w-[750px] text-center">
+                <div className="text-center">
                     <h1 className="font-extrabold leading-20 text-6xl">
                         Build beautiful interfaces <br /> without the complexity
                     </h1>

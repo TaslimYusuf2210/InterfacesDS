@@ -7,10 +7,10 @@ function Testimonials() {
         <div className="">
             <div className="text-left max-w-[65%] space-y-8">
                 <Interface></Interface>
-                <h1 className="text-5xl font-bold">
+                <h1 className="text-4xl font-bold">
                     Testimonials
                 </h1>
-                <p className="mb-16 font-medium text-brand text-lg">
+                <p className="mb-16 font-medium text-brand">
                     Discover what designers and developers around the world are saying about the Interfaces
                     Design System. Their experiences showcase how our system has revolutionized workflows and
                     enhanced project outcomes across various industries.
@@ -30,7 +30,7 @@ function Testimonials() {
                             <img className="size-12 rounded-full border border-accent" src={test1} alt="" />
                             <div className="flex flex-col">
                                 <header className="font-medium">Dudu</header>
-                                <p className="text-brand">Founder, Toolfolio</p>
+                                <p className="text-brand text-sm">Founder, Toolfolio</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ function Testimonials() {
                             <div className="size-12 rounded-full border border-accent bg-accent"></div>
                             <div className="flex flex-col">
                                 <header className="font-medium">Your Name</header>
-                                <p className="text-brand">Your Position</p>
+                                <p className="text-brand text-sm">Your Position</p>
                             </div>
                         </div>
                     </div>

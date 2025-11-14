@@ -7,11 +7,11 @@ function Revolutionalize() {
   return (
     <div className="place-items-center text-center space-y-8">
       <Interface></Interface>
-      <h1 className="text-5xl leading-16 font-bold">
+      <h1 className="text-4xl leading-16 font-bold">
         Revolutionize Your Design <br />
         Workflow Effortlessly
       </h1>
-      <p className="mb-16 font-medium text-brand text-lg">
+      <p className="mb-16 font-medium text-brand">
         Our design system streamlines your workflow, ensuring consistency and
         efficiency across all
         <br /> projects. With a minimalist approach, you can focus on creativity
@@ -25,7 +25,7 @@ function Revolutionalize() {
             for Unique Branding
           </h6>
           <hr className="text-accent" />
-          <p className=" text-lg">
+          <p >
             Utilizes Figma Variables and Tailwind’s class-switching logic for
             seamless shifts between light/dark modes, brand colors, or custom
             themes.
@@ -38,7 +38,7 @@ function Revolutionalize() {
             Tweaking System
           </h6>
           <hr className="text-accent" />
-          <p className=" text-lg">
+          <p>
             Leverages Tailwind’s atomic approach and Figma Variables’ dynamic
             adjustments for precise control over spacing, colors, typography,
             and more, with full system consistency.
@@ -50,7 +50,7 @@ function Revolutionalize() {
             Fluid, Seamless Design-to-Code Transition
           </h6>
           <hr className="text-accent" />
-          <p className=" text-lg">
+          <p >
             Integrates Figma Variables and Tailwind CSS deeply, converting
             design system styles into ready-to-use code, reducing developer
             adjustments.
