@@ -7,7 +7,7 @@ function Testimonials() {
         <div className="">
             <div className="text-left max-w-[65%] space-y-8">
                 <Interface></Interface>
-                <h1 className="text-4xl font-bold">
+                <h1 className="text-5xl font-bold">
                     Testimonials
                 </h1>
                 <p className="mb-16 font-medium text-brand">

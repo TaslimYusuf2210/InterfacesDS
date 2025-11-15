@@ -1,7 +1,9 @@
+import ArticlesPage from "../components/ArticlesPage";
+
 function Articles() {
     return ( 
-        <div>
-            
+        <div className="pt-20 pb-40 grid place-items-center">
+            <ArticlesPage></ArticlesPage>
         </div>
      );
 }

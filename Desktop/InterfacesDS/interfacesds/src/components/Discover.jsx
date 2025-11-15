@@ -7,7 +7,7 @@ function Discover() {
         <div className="flex">
             <div className=" text-left space-y-8 w-full">
                 <Interface/>
-                <h1 className="text-4xl leading-16 font-bold">
+                <h1 className="text-5xl leading-16 font-bold">
                     Discover the power <br />
                     of Minimalist Design
                 </h1>
