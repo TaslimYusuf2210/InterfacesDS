@@ -1,11 +1,20 @@
 import { SiCssdesignawards } from "react-icons/si";
 import { NavLink } from "react-router-dom";
 import GetandPreview from "./GetandPreview";
+import Menu from "./menu";
+import Close from "./Close";
+import React, { useState } from "react";
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    function handleIsOpen() {
+        setIsOpen((prev) => !prev)
+    }
+
     return ( 
         <nav className="bg-black flex justify-between px-4 pt-2 pb-2 border-b-accent border-b fixed w-full z-9999">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 z-50">
                 <span className="text-4xl">
                     <SiCssdesignawards />
                 </span>
@@ -14,7 +23,7 @@ function Navbar() {
                 </span>
             </div>
             <div className="flex items-center gap-4 font-medium">
-                <div className="flex items-center gap-3">
+                <div className="md:flex items-center gap-3 hidden">
                     <NavLink
                     to="/"
                     end
@@ -39,6 +48,77 @@ function Navbar() {
                 <GetandPreview
                 nav={false}
                 ></GetandPreview>
+                <button onClick={handleIsOpen} className="md:hidden z-50" type="button">
+                    <Menu
+                    open={isOpen}
+                    ></Menu>
+                    <Close
+                    open={isOpen}
+                    ></Close>
+
+                </button>
+
+                {/* mobile  view dropdown menu content */}
+                <div className={`
+                absolute left-0 px-4 w-full top-16 bg-black text-white shadow-lg md:hidden overflow-hidden z-50
+                transition-all duration-300 flex flex-col space-y-3 ${isOpen ? "block h-fit" : "hidden"}
+                `}>
+                    <NavLink 
+                    to="/"
+                    onClick={() => setIsOpen(false)}
+                    end
+                    className={({isActive}) => 
+                    `hover:bg-accent rounded-sm flex items-center gap-6 py-3 h-fit
+                    ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white ]" : "px-6"} `}>
+                    Home
+                    </NavLink>
+                    <NavLink 
+                    to="/pricing"
+                    onClick={() => setIsOpen(false)}
+                    className={({isActive}) => 
+                    `hover:bg-accent rounded-sm flex items-center gap-6 py-3 h-fit
+                    ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white " : "px-6"} `}>
+                    Pricings
+                    </NavLink>
+                    <NavLink 
+                    to="/articles"
+                    onClick={() => setIsOpen(false)}
+                    className={({isActive}) => 
+                    `hover:bg-accent rounded-sm flex items-center gap-6 py-3 h-fit
+                    ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white " : "px-6"} `}>
+                    Articles
+                    </NavLink>
+                    <div 
+                    className={
+                    `hover:bg-accent rounded-sm flex items-center gap-6 px-6 py-3 h-fit
+                     `}>
+                    Contact
+                    </div>
+                    <NavLink 
+                    to="/preview"
+                    className={({isActive}) => 
+                    `hover:bg-accent rounded-sm flex items-center gap-6 py-3 h-fit border border-accent
+                    ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white " : "px-6"} `}>
+                    Preview
+                    </NavLink>
+                    <NavLink 
+                    to="/pricing"
+                    onClick={() => setIsOpen(false)}
+                    className={
+                    `hover:bg-gray-200 rounded-sm flex items-center gap-6 px-6 py-3 h-fit bg-white text-black
+                     `}>
+                    Get it now
+                    </NavLink>
+                </div>
+
+                {/* Background while dropdown navbar is open */}
+                {isOpen && (
+                <div className="fixed inset-0 bg-black z-40"
+                onClick={() => setIsOpen(false)}
+                >
+
+                </div>
+                )}
             </div>
         </nav>
      );
