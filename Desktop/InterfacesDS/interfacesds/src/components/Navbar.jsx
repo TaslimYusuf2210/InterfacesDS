@@ -23,7 +23,7 @@ function Navbar() {
                 </span>
             </div>
             <div className="flex items-center gap-4 font-medium">
-                <div className="md:flex items-center gap-3 hidden">
+                <div className="lg:flex items-center gap-3 hidden">
                     <NavLink
                     to="/"
                     end
@@ -48,7 +48,7 @@ function Navbar() {
                 <GetandPreview
                 nav={false}
                 ></GetandPreview>
-                <button onClick={handleIsOpen} className="md:hidden z-50" type="button">
+                <button onClick={handleIsOpen} className="lg:hidden z-50" type="button">
                     <Menu
                     open={isOpen}
                     ></Menu>
@@ -60,7 +60,7 @@ function Navbar() {
 
                 {/* mobile  view dropdown menu content */}
                 <div className={`
-                absolute left-0 px-4 w-full top-16 bg-black text-white shadow-lg md:hidden overflow-hidden z-50
+                absolute left-0 px-4 w-full top-16 bg-black text-white shadow-lg lg:hidden overflow-hidden z-50
                 transition-all duration-300 flex flex-col space-y-3 ${isOpen ? "block h-fit" : "hidden"}
                 `}>
                     <NavLink 

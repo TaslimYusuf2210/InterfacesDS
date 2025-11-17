@@ -14,7 +14,7 @@ function PricingPlans() {
                         projects. With a minimalist approach, you can focus on creativity without the clutter.
                     </p>
             </div>
-            <div className="flex gap-8">
+            <div className="flex flex-col lg:flex-row gap-8">
                 <div className="w-full text-left space-y-6 border border-accent rounded-xl p-6">
                     <div className="space-y-2 border-b border-b-accent pb-6">
                         <h4 className="text-2xl font-bold">Team</h4>

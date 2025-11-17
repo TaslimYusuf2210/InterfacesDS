@@ -16,7 +16,7 @@ function Testimonials() {
                     enhanced project outcomes across various industries.
                 </p>
             </div>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-12">
                 <div className="border-accent rounded-xl px-6 border">
                     <div className="flex gap-2 py-6">
                         <FaStar  className="text-2xl text-white"/>

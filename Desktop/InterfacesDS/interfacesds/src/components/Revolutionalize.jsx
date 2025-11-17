@@ -17,8 +17,8 @@ function Revolutionalize() {
         <br /> projects. With a minimalist approach, you can focus on creativity
         without the clutter.
       </p>
-      <div className="flex gap-4">
-        <div className="space-y-8 w-1/3 rounded-xl h-fit border border-accent p-6">
+      <div className="flex gap-4 lg:flex-row flex-col">
+        <div className="space-y-8 w-full rounded-xl h-fit border border-accent p-6">
           <img src={node} />
           <h6 className="text-xl font-semibold">
             Tailored Customizable System <br />
@@ -31,7 +31,7 @@ function Revolutionalize() {
             themes.
           </p>
         </div>
-        <div className="space-y-8 w-1/3 rounded-xl border border-accent p-6">
+        <div className="space-y-8 w-full rounded-xl border border-accent p-6">
           <img src={node} />
           <h6 className="text-xl font-semibold">
             Dynamic, Highly Flexible <br />
@@ -44,7 +44,7 @@ function Revolutionalize() {
             and more, with full system consistency.
           </p>
         </div>
-        <div className="space-y-8 w-1/3 h-fit rounded-xl border border-accent p-6">
+        <div className="space-y-8 w-full h-fit rounded-xl border border-accent p-6">
           <img src={node} />
           <h6 className="text-xl font-semibold">
             Fluid, Seamless Design-to-Code Transition

@@ -4,14 +4,14 @@ import Carousel from "./carousel";
 
 function Discover() {
     return ( 
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
             <div className=" text-left space-y-8 w-full">
                 <Interface/>
-                <h1 className="text-5xl leading-16 font-bold">
+                <h1 className="md:text-5xl text-4xl leading-16 font-bold">
                     Discover the power <br />
                     of Minimalist Design
                 </h1>
-                <p className="mb-16 font-medium text-brand">
+                <p className="mb-16 font-medium text-brand ">
                     The Interfaces Design System streamlines your design process with a
                     <br /> focus on simplicity and efficiency. Elevate your projects with our
                     <br /> intuitive components and cohesive style.
