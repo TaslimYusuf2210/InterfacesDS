@@ -10,7 +10,7 @@ function PricingPlans() {
                         Pricing Plans
                     </h1>
                     <p className="mb-16 font-medium text-brand">
-                        Our design system streamlines your workflow, ensuring consistency and efficiency across all <br />
+                        Our design system streamlines your workflow, ensuring consistency and efficiency across all <br className="lg:block hidden"/>
                         projects. With a minimalist approach, you can focus on creativity without the clutter.
                     </p>
             </div>

@@ -1,5 +1,7 @@
 import Interface from "./Interfaces";
-import node from "../assets/node.svg";
+import { RiCodeBoxLine } from "react-icons/ri";
+import { PiPolygonBold } from "react-icons/pi";
+import { GiNestedHexagons } from "react-icons/gi";
 import GetandPreview from "./GetandPreview";
 // import { ReactComponent as NodeIcon } from "../assets/node.svg"
 
@@ -18,38 +20,38 @@ function Revolutionalize() {
         without the clutter.
       </p>
       <div className="flex gap-4 lg:flex-row flex-col">
-        <div className="space-y-8 w-full rounded-xl h-fit border border-accent p-6">
-          <img src={node} />
+        <div className="flex flex-col items-center space-y-8 w-full max-w-96 rounded-xl h-fit border border-accent p-6">
+          <PiPolygonBold className="text-white lg:text-3xl text-2xl"/>
           <h6 className="text-xl font-semibold">
             Tailored Customizable System <br />
             for Unique Branding
           </h6>
-          <hr className="text-accent" />
+          <hr className="text-accent w-full" />
           <p >
             Utilizes Figma Variables and Tailwind’s class-switching logic for
             seamless shifts between light/dark modes, brand colors, or custom
             themes.
           </p>
         </div>
-        <div className="space-y-8 w-full rounded-xl border border-accent p-6">
-          <img src={node} />
+        <div className="flex flex-col items-center space-y-8 w-full max-w-96 rounded-xl border border-accent p-6">
+          <GiNestedHexagons className="text-white lg:text-3xl text-2xl"/>
           <h6 className="text-xl font-semibold">
             Dynamic, Highly Flexible <br />
             Tweaking System
           </h6>
-          <hr className="text-accent" />
+          <hr className="text-accent w-full"/>
           <p>
             Leverages Tailwind’s atomic approach and Figma Variables’ dynamic
             adjustments for precise control over spacing, colors, typography,
             and more, with full system consistency.
           </p>
         </div>
-        <div className="space-y-8 w-full h-fit rounded-xl border border-accent p-6">
-          <img src={node} />
+        <div className="flex flex-col items-center space-y-8 w-full max-w-96 h-fit rounded-xl border border-accent p-6">
+          <RiCodeBoxLine className="text-white lg:text-3xl text-2xl"/>
           <h6 className="text-xl font-semibold">
             Fluid, Seamless Design-to-Code Transition
           </h6>
-          <hr className="text-accent" />
+          <hr className="text-accent w-full" />
           <p >
             Integrates Figma Variables and Tailwind CSS deeply, converting
             design system styles into ready-to-use code, reducing developer

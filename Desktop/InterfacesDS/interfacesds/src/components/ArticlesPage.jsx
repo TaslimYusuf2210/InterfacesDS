@@ -8,7 +8,7 @@ function ArticlesPage() {
                 along as I document the journey, decisions, and technical insights.
                 </p>
             </div>
-            <div className="pl-4 pt-4 pb-5 pr-8 rounded-lg  space-y-6 border border-accent">
+            <div className="pl-4 pt-4 pb-5 pr-8 rounded-lg space-y-6 border border-accent">
                 <p className="text-xs text-brand">March 17, 2025</p>
                 <p className="text-xl font-semibold">Interfaces: A Personal Design System Journey for Modern Web Apps</p>
                 <p className="text-brand">
@@ -16,7 +16,7 @@ function ArticlesPage() {
                 goals behind the project, and how it aims to solve common UI development 
                 challenges.
                 </p>
-                <button className="border py-4 px-6 border-accent rounded-sm hover:bg-accent" type="button">Read More</button>
+                <button className="border py-4 px-6 border-accent rounded-sm hover:bg-accent cursor-pointer" type="button">Read More</button>
             </div>
         </div>
      );
