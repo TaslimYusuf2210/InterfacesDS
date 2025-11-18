@@ -7,14 +7,14 @@ function Revolutionalize() {
   return (
     <div className="place-items-center text-center space-y-8">
       <Interface></Interface>
-      <h1 className="text-5xl leading-16 font-bold">
-        Revolutionize Your Design <br />
+      <h1 className="md:text-5xl text-4xl md:leading-16  font-bold">
+        Revolutionize Your Design <br className="lg:block hidden"/>
         Workflow Effortlessly
       </h1>
       <p className="mb-16 font-medium text-brand">
         Our design system streamlines your workflow, ensuring consistency and
         efficiency across all
-        <br /> projects. With a minimalist approach, you can focus on creativity
+        <br className="lg:block hidden"/> projects. With a minimalist approach, you can focus on creativity
         without the clutter.
       </p>
       <div className="flex gap-4 lg:flex-row flex-col">

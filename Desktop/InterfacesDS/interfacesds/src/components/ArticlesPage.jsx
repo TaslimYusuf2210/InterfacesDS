@@ -2,7 +2,7 @@ function ArticlesPage() {
     return ( 
         <div className="w-full max-w-[720px] space-y-10">
             <div className="space-y-8">
-                <h1 className="text-5xl font-bold">Articles</h1>
+                <h1 className="md:text-5xl text-4xl font-bold">Articles</h1>
                 <p className="font-medium text-brand">
                 Collection of articles about architecting and building the Interfaces Design System. Follow
                 along as I document the journey, decisions, and technical insights.

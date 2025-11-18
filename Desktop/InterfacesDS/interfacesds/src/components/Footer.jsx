@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="px-4 py-6 border-t border-t-accent">
       <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row">
-        <div className="w-full space-y-10 pr-32">
+        <div className="w-full space-y-10 pr-0 lg:pr-32">
           <div className="flex items-center gap-2">
             <span className="text-4xl">
               <SiCssdesignawards />

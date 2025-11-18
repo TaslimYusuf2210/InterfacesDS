@@ -6,7 +6,7 @@ function PricingPlans() {
         <div className="grid text-center">
             <div className="space-y-8 text-center grid place-items-center">
                 <Interface></Interface>
-                <h1 className="text-5xl font-bold">
+                <h1 className="md:text-5xl text-4xl font-bold">
                         Pricing Plans
                     </h1>
                     <p className="mb-16 font-medium text-brand">

@@ -6,7 +6,7 @@ function Connect() {
     <div className="space-y-10">
       <div className="space-y-8 border-b border-b-accent pb-8">
         <Interface></Interface>
-        <h1 className="text-5xl font-bold">Let's Connect</h1>
+        <h1 className="md:text-5xl text-4xl font-bold">Let's Connect</h1>
         <p className="font-medium text-brand">
           I'd love to hear from you! Whether you have questions about the
           Interfaces Design System or <br />
