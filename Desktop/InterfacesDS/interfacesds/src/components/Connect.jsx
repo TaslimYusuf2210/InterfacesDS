@@ -14,10 +14,7 @@ function Connect() {
       setTimeout(() => {
       setCopyState(false);
     }, 2000);
-    }).catch(err => {
-      setCopyState(false)
     })
-    
   }
 
   return (
