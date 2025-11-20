@@ -1,6 +1,10 @@
+import PreviewPage from "../components/PreviewPage";
+
 function Preview() {
     return ( 
-        <div></div>
+        <div>
+            <PreviewPage></PreviewPage>
+        </div>
      );
 }
 
