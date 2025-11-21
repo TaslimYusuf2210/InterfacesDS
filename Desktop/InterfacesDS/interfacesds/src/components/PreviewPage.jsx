@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { IoIosArrowDown } from "react-icons/io";
 
 const listOfItems = [
     {
@@ -21,18 +21,23 @@ const listOfItems = [
 
 function PreviewPage() {
     const [currentImage, setCurrentImage] = useState(listOfItems[0].state)
+
+    function handleImageRender() {
+        
+    }
     return ( 
         <div className="bg-brand">
-            <div>
-                <div className="relative top-2 left-2">
-                    Cover
+            <div className="bg-accent w-fit relative top-2 left-2 rounded-lg">
+                <div className="bg-accent items-center px-2 py-1 flex gap-3 ">
+                    <span>Cover</span> 
+                    <IoIosArrowDown />
                 </div>
-                <div className="bg-accent rounded-xl">
+                <div className="bg-accent rounded-xl list-none">
                     <li>Rufai</li>
                     <li>Ahmad</li>
                     <li>Olayemi</li>
                 </div>
-                di
+                
             </div>
         </div>
      );
