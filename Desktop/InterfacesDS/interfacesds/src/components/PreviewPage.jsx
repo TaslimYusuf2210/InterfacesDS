@@ -78,7 +78,13 @@ function PreviewPage() {
                     <div className={` ${dropdown ? "block" : "hidden"} bg-accent absolute top-7 rounded-md list-none w-fit space-y-2 px-2 py-2 mt-2`}>
                         <ul>
                             {listOfImages.map((image) => (
-                                <li onClick={() => setCurrentImage(image.value)} key={image.id} className={`text-xs cursor-pointer px-2 rounded-sm py-2 hover:bg-blue-500 ${currentImage === image.value ? "bg-blue-600 text-white" : ""}`}>{image.name}</li>
+                                <li 
+                                onClick={() => {setCurrentImage(image.value); setDropdown(false)}} 
+                                key={image.id} 
+                                className={`text-xs cursor-pointer px-2 rounded-sm py-2 hover:bg-blue-500 
+                                ${currentImage === image.value ? "bg-blue-600 text-white" : ""}`}>
+                                {image.name}
+                                </li>
                             ))}
                         </ul>
                     </div>

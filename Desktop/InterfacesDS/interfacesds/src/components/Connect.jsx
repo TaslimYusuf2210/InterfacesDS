@@ -18,7 +18,7 @@ function Connect() {
   }
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10" id="contact">
       <div className="space-y-8 border-b border-b-accent pb-8">
         <Interface></Interface>
         <h1 className="md:text-5xl text-4xl font-bold">Let's Connect</h1>

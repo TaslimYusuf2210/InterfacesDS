@@ -4,12 +4,26 @@ import GetandPreview from "./GetandPreview";
 import Menu from "./menu";
 import Close from "./Close";
 import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+    const location = useLocation();
+    const navigate = useNavigate();
 
     function handleIsOpen() {
         setIsOpen((prev) => !prev)
+    }
+
+    function goToContact() {
+        if (location.pathname === "/") {
+            // Already on homepage? Just scroll
+            document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
+        } else {
+            console.log("Not in homepage")
+            navigate("/")
+            // document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
+        }
     }
 
     return ( 
@@ -43,11 +57,16 @@ function Navbar() {
                     `hover:bg-accent rounded-sm px-5 flex flex-col items-center gap-2 py-3 
                     ${isActive ? "pb-0 after:content-[''] after:w-16 after:block after:h-0.5 after:bg-white " : ""} `}
                     >Articles</NavLink>
-                    <NavLink>Contact</NavLink>
+                    <NavLink onClick={goToContact}>Contact</NavLink>
+                </div>    
+                <div className="lg:flex gap-2 p-2 hidden">
+                    <NavLink to="/preview" 
+                    className={({isActive}) => 
+                    `cursor-pointer border font-medium border-accent px-6 py-3 rounded-md hover:bg-accent
+                    ${isActive ? "after:relative after:top-3  after:content-[''] after:w-16 after:block after:h-0.5 after:bg-white" : ""}`}>
+                    Preview</NavLink>
+                    <NavLink to="/pricing" className={`cursor-pointer text-black font-medium bg-white rounded-md py-3 px-4 hover:bg-blue-50`}>Get it now</NavLink>
                 </div>
-                <GetandPreview
-                nav={false}
-                ></GetandPreview>
                 <button onClick={handleIsOpen} className="lg:hidden z-50" type="button">
                     <Menu
                     open={isOpen}
@@ -55,7 +74,6 @@ function Navbar() {
                     <Close
                     open={isOpen}
                     ></Close>
-
                 </button>
 
                 {/* mobile  view dropdown menu content */}
