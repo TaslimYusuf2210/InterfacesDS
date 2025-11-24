@@ -96,6 +96,7 @@ function Navbar() {
                     </div>
                     <NavLink 
                     to="/preview"
+                    onClick={() => setIsOpen(false)}
                     className={({isActive}) => 
                     `hover:bg-accent rounded-sm flex items-center gap-6 py-3 h-fit border border-accent
                     ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white " : "px-6"} `}>
