@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 export default function MainLayout() {
 
     return (
-        <div className="font-lexend min-h-screen container">
+        <div className="font-lexend min-h-screen max-w-[1536px] mx-auto">
             <Navbar className=""></Navbar>
             <main className="pt-28">
                 <Outlet></Outlet>

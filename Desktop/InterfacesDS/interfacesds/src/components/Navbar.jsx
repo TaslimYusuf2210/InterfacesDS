@@ -5,6 +5,7 @@ import Menu from "./menu";
 import Close from "./Close";
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,19 +16,19 @@ function Navbar() {
         setIsOpen((prev) => !prev)
     }
 
-    function goToContact() {
-        if (location.pathname === "/") {
-            // Already on homepage? Just scroll
-            document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
-        } else {
-            console.log("Not in homepage")
-            navigate("/")
-            // document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
-        }
-    }
+    // function goToContact() {
+    //     if (location.pathname === "/") {
+    //         // Already on homepage? Just scroll
+    //         document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
+    //     } else {
+    //         console.log("Not in homepage")
+    //         navigate("/")
+    //         // document.getElementById("connect")?.scrollIntoView({ behavior: "smooth"})
+    //     }
+    // }
 
     return ( 
-        <nav className="bg-black flex justify-between px-4 pt-2 pb-2 border-b-accent border-b fixed w-full z-9999">
+        <nav className="bg-black flex justify-between px-4 pt-2 pb-2 border-b-accent border-b fixed w-full z-9999 max-w-[1536px]">
             <div className="flex items-center gap-2 z-50">
                 <span className="text-4xl">
                     <SiCssdesignawards />
@@ -57,7 +58,7 @@ function Navbar() {
                     `hover:bg-accent rounded-sm px-5 flex flex-col items-center gap-2 py-3 
                     ${isActive ? "pb-0 after:content-[''] after:w-16 after:block after:h-0.5 after:bg-white " : ""} `}
                     >Articles</NavLink>
-                    <NavLink onClick={goToContact}>Contact</NavLink>
+                    <Link smooth to="/#connect">Contact</Link>
                 </div>    
                 <div className="lg:flex gap-2 p-2 hidden">
                     <NavLink to="/preview" 
@@ -106,12 +107,15 @@ function Navbar() {
                     ${isActive ? "before:content-[''] before:w-0.5 before:block before:h-5 before:bg-white " : "px-6"} `}>
                     Articles
                     </NavLink>
-                    <div 
+                    <Link 
+                    smooth
+                    to="/#connect"
+                    onClick={()=> setIsOpen(false)}
                     className={
                     `hover:bg-accent rounded-sm flex items-center gap-6 px-6 py-3 h-fit
                      `}>
                     Contact
-                    </div>
+                    </Link>
                     <NavLink 
                     to="/preview"
                     onClick={() => setIsOpen(false)}

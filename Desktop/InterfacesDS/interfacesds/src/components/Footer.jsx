@@ -33,7 +33,7 @@ function Footer() {
             </p>
           </form>
         </div>
-        <div className="font-medium grid grid-cols-3 gap-24 w-full lg:pl-36">
+        <div className="font-medium grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-3 lg:gap-24 w-full lg:pl-36">
           <div className="flex flex-col gap-8 justify-start">
             <header className="text-brand ">Quick Link</header>
             <p>Home</p>
@@ -43,7 +43,7 @@ function Footer() {
             <header className="text-brand ">Support</header>
             <p>Contact</p>
           </div>
-          <div className="flex flex-col gap-8 justify-start">
+          <div className="flex flex-col gap-8 justify-start w-full">
             <header className="text-brand ">Social Media</header>
             <p> [@jshguo]</p>
           </div>
